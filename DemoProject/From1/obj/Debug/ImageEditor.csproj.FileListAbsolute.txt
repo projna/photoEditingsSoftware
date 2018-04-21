@@ -1,0 +1,36 @@
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\ImageEditor.Properties.Resources.resources
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\ImageEditor.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\user\Desktop\C# project\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\user\Desktop\C# project\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\user\Desktop\C# project\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\ImageEditor.MainInterface.resources
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\ImageEditor.csprojResolveAssemblyReference.cache
+C:\Users\Projna\Desktop\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\Projna\Desktop\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\Projna\Desktop\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\ImageEditor.csprojResolveAssemblyReference.cache
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\ImageEditor.MainInterface.resources
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\ImageEditor.Properties.Resources.resources
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\ImageEditor.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\user\Desktop\C# po\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\user\Desktop\C# po\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\user\Desktop\C# po\DemoProject\From1\obj\Debug\ImageEditor.MainInterface.resources
+C:\Users\user\Desktop\C# po\DemoProject\From1\obj\Debug\ImageEditor.Properties.Resources.resources
+C:\Users\user\Desktop\C# po\DemoProject\From1\obj\Debug\ImageEditor.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.dll
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Imaging.dll
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Imaging.Formats.dll
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Imaging.IPPrototyper.dll
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Math.dll
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.xml
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Imaging.xml
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Imaging.Formats.xml
+C:\Users\user\Desktop\C# po\DemoProject\From1\bin\Debug\AForge.Math.xml
+C:\Users\user\Desktop\C# po\DemoProject\From1\obj\Debug\ImageEditor.csprojResolveAssemblyReference.cache

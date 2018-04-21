@@ -1,0 +1,46 @@
+D:\CSE\C#\DemoProject\From1\bin\Debug\From1.exe.config
+D:\CSE\C#\DemoProject\From1\obj\Debug\From1.csprojResolveAssemblyReference.cache
+D:\CSE\C#\DemoProject\From1\obj\Debug\From1.Form1.resources
+D:\CSE\C#\DemoProject\From1\obj\Debug\From1.Properties.Resources.resources
+D:\CSE\C#\DemoProject\From1\obj\Debug\From1.csproj.GenerateResource.Cache
+D:\CSE\C#\DemoProject\From1\bin\Debug\From1.exe
+D:\CSE\C#\DemoProject\From1\bin\Debug\From1.pdb
+D:\CSE\C#\DemoProject\From1\obj\Debug\From1.exe
+D:\CSE\C#\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\Projna\Desktop\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\obj\Debug\From1.csprojResolveAssemblyReference.cache
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\obj\Debug\From1.Form1.resources
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\obj\Debug\From1.Properties.Resources.resources
+C:\Users\Projna\Documents\Visual Studio 2012\DemoProject\From1\obj\Debug\From1.csproj.GenerateResource.Cache
+C:\Users\Projna\Desktop\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\Projna\Desktop\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.csprojResolveAssemblyReference.cache
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.Form1.resources
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.Properties.Resources.resources
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.csproj.GenerateResource.Cache
+C:\Users\Projna\Desktop\DemoProject\From1\obj\Debug\From1.Form2.resources
+C:\Users\user\Desktop\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\user\Desktop\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\user\Desktop\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\user\Desktop\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\user\Desktop\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\user\Desktop\DemoProject\From1\obj\Debug\From1.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\DemoProject\From1\obj\Debug\From1.Form1.resources
+C:\Users\user\Desktop\DemoProject\From1\obj\Debug\From1.Properties.Resources.resources
+C:\Users\user\Desktop\DemoProject\From1\obj\Debug\From1.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\C# project\DemoProject\From1\bin\Debug\From1.exe.config
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.exe
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.pdb
+C:\Users\user\Desktop\C# project\DemoProject\From1\bin\Debug\From1.exe
+C:\Users\user\Desktop\C# project\DemoProject\From1\bin\Debug\From1.pdb
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.MainInterface.resources
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.Properties.Resources.resources
+C:\Users\user\Desktop\C# project\DemoProject\From1\obj\Debug\From1.csproj.GenerateResource.Cache

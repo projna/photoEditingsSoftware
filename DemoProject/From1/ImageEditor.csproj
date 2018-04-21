@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85213032-AAA0-4E27-BA95-7DD50E499B7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImageEditor</RootNamespace>
+    <AssemblyName>From1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\..\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.Formats">
+      <HintPath>..\..\Release\AForge.Imaging.Formats.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.IPPrototyper">
+      <HintPath>..\..\Release\AForge.Imaging.IPPrototyper.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainInterface.Designer.cs">
+      <DependentUpon>MainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="MainInterface.resx">
+      <DependentUpon>MainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refine.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\effect.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\effect1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overlay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stickers.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\type.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-icon-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-tool-or-interface-symbol-for-print-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crop-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straighten.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interface-symbol-of-four-arrows-to-resize-preview-image-to-small-view-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto contrast.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red eye.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\focal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contrast.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blur.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharpen.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smooth.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double exp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\type1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualize-arrows-couple-in-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropp1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropp2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropp3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straighten1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resizeable1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resizeable2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto contrast2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto contrast3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heal2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red eye2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\focal2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contrast1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blur1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharpen1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smooth1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double exp1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d3b237b56ef0b39a70d40ca76d912d6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful-Bright-Ink-Splashes-on-White-Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-paper-with-torn-and-ripped-edges-398x502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf7a5fb27c232dab0085d49bbef76cc8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf7a5fb27c232dab0085d49bbef76cc81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d3b237b56ef0b39a70d40ca76d912d61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7Ta6dny7c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutcaster-photo-100819685-Grunge-border.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful_ink_magic_effect_background_vector_546825.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful-Bright-Ink-Splashes-on-White-Background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_5080227-stock-photo-ink-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_68587538_cTiSwsCAAnCE8leMs6P2PcWwTEHKfKs8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%297.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_99162889_d52FwQKfu0wbHPGh9O8dGkKVzYBj0uYT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%298.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%297.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%298.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%299.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%297.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image22s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_99162889_d52FwQKfu0wbHPGh9O8dGkKVzYBj0uYT1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%298.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%299.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%2910.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%299.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%2910.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0123654.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d3b237b56ef0b39a70d40ca76d912d62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112322.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11111112222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leakkkk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\errree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15214569877.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\234555555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ert54rt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hujhujh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thnhtthn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1111111111111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01236541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rorateleft.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up-and-down-opposite-double-arrows-side-by-side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-arrowtopBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straighten2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stickertest.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
